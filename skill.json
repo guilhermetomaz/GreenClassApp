@@ -1,0 +1,758 @@
+{
+  "intents": [
+    {
+      "intent": "diagnostico",
+      "examples": [
+        {
+          "text": "4"
+        },
+        {
+          "text": "Diagnóstico"
+        },
+        {
+          "text": "Diagnóstico de doenças e pragas"
+        },
+        {
+          "text": "quatro"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "dicas-agricultura",
+      "examples": [
+        {
+          "text": "3"
+        },
+        {
+          "text": "Dicas de agricultura"
+        },
+        {
+          "text": "Dúvidas sobre agricultura"
+        },
+        {
+          "text": "três"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "navegacao",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "Cansei dessa tela"
+        },
+        {
+          "text": "Ir para aba diferente"
+        },
+        {
+          "text": "Ir para outra tela"
+        },
+        {
+          "text": "Mudar de aba"
+        },
+        {
+          "text": "Navegar para outra página"
+        },
+        {
+          "text": "Quero mudar de tela"
+        },
+        {
+          "text": "Quero ser direcionado para outra tela"
+        },
+        {
+          "text": "Quero ver outras telas do app"
+        },
+        {
+          "text": "Trocar de página"
+        },
+        {
+          "text": "um"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "previsao-clima",
+      "examples": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "Clima"
+        },
+        {
+          "text": "Como está o céu hoje"
+        },
+        {
+          "text": "Cor do céu"
+        },
+        {
+          "text": "dois"
+        },
+        {
+          "text": "Informações sobre o clima"
+        },
+        {
+          "text": "Previsão"
+        },
+        {
+          "text": "Previsão clima"
+        },
+        {
+          "text": "Previsão do clima"
+        },
+        {
+          "text": "Probabilidades de chuva"
+        },
+        {
+          "text": "Qual é o clima"
+        },
+        {
+          "text": "Qual é o clima de hoje"
+        },
+        {
+          "text": "Saber a previsão"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudacao",
+      "examples": [
+        {
+          "text": "Boa noite, tudo certo?"
+        },
+        {
+          "text": "Boa tarde!"
+        },
+        {
+          "text": "Bom dia, tudo bom?"
+        },
+        {
+          "text": "bote"
+        },
+        {
+          "text": "E ai?"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Oi, tudo bom?"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Olá bote"
+        },
+        {
+          "text": "Olá, tudo bem?"
+        },
+        {
+          "text": "Salve bote"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tela-dashboard",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "Aba que aparece depois do login"
+        },
+        {
+          "text": "Dashboard"
+        },
+        {
+          "text": "Home"
+        },
+        {
+          "text": "Inicio"
+        },
+        {
+          "text": "Página de inicio"
+        },
+        {
+          "text": "Painel de controle"
+        },
+        {
+          "text": "Primeira aba do app"
+        },
+        {
+          "text": "Tela com todas as funcionalidades"
+        },
+        {
+          "text": "Tela principal"
+        },
+        {
+          "text": "um"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tela-dicas-agricultura",
+      "examples": [
+        {
+          "text": "3"
+        },
+        {
+          "text": "Agricultura"
+        },
+        {
+          "text": "Coisas relacionadas a zona rural"
+        },
+        {
+          "text": "Conhecimento"
+        },
+        {
+          "text": "Conselhos"
+        },
+        {
+          "text": "Dicas"
+        },
+        {
+          "text": "Dicas de agricultura"
+        },
+        {
+          "text": "Duúvidas sobre plantio"
+        },
+        {
+          "text": "Quero tira dúvidas sobre a agricultura"
+        },
+        {
+          "text": "três"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "tela-previsao-clima",
+      "examples": [
+        {
+          "text": "2"
+        },
+        {
+          "text": "Aba que mostra o clima"
+        },
+        {
+          "text": "Clima"
+        },
+        {
+          "text": "dois"
+        },
+        {
+          "text": "Exibir o Clima"
+        },
+        {
+          "text": "Ir para a temperatura"
+        },
+        {
+          "text": "Navegar para a temperatura"
+        },
+        {
+          "text": "Página do clima"
+        },
+        {
+          "text": "Previsão"
+        },
+        {
+          "text": "Previsão clima"
+        },
+        {
+          "text": "Quero navegar para a previsão"
+        },
+        {
+          "text": "Tela de previsão do clima"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "agricultura",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Plantio",
+          "synonyms": [
+            "planta"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Rio de Janeiro",
+          "synonyms": [
+            "cidade maravilhosa",
+            "rio",
+            "rj"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Salvador",
+          "synonyms": [
+            "bahia de todos",
+            "sal",
+            "salvator"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "São Paulo",
+          "synonyms": [
+            "sampa",
+            "sp",
+            "terra da garoa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "doença",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Manchas pretas",
+          "synonyms": [
+            "mancha",
+            "preta"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "senha",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "senha",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Sou o assistente do Green Class. Veja abaixo as opções: \n\n1. Ir para outra tela\n\n2. Previsão do clima\n\n3. Dicas de agricultura\n\n4. Diagnóstico de doenças e pragas\n\nO que deseja fazer ou saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome || #saudacao",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_9_1653159460310",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Manchas pretas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Essas manchas estão sendo causadas por fungos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1653159460310",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@doença:(Manchas pretas)",
+      "dialog_node": "node_1_1653159825025"
+    },
+    {
+      "type": "standard",
+      "title": "Ir para outra tela",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Veja abaixo as opções de tela:  \n\n1. Início\n\n2. Previsão do clima\n\n3. Dicas de agricultura\n\n4. Diagnóstico de doenças e pragas\n\nEscolha uma tela para navegar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#navegacao",
+      "dialog_node": "node_2_1653091859745",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Previsão do clima",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Navegando para previsão do clima..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1653091859745",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#tela-previsao-clima",
+      "dialog_node": "node_2_1653095206396",
+      "previous_sibling": "node_5_1653093082242"
+    },
+    {
+      "type": "standard",
+      "title": "São Paulo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "temperatura (atual: 22, max: 23, min: 19)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1653096842513",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@cidade:(São Paulo)",
+      "dialog_node": "node_3_1653153358970"
+    },
+    {
+      "type": "standard",
+      "title": "Diagnóstico de doenças e pragas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Navegando para diagnóstico de doenças e pragas..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1653091859745",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "false",
+      "dialog_node": "node_4_1653096489354",
+      "previous_sibling": "node_9_1653095526513"
+    },
+    {
+      "type": "standard",
+      "title": "Dashboard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Navegando para início..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1653091859745",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#tela-dashboard",
+      "dialog_node": "node_5_1653093082242"
+    },
+    {
+      "type": "standard",
+      "title": "Dicas de agricultura",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual sua dúvida relacionada a agricultura?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#dicas-agricultura",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1653153812632",
+      "previous_sibling": "node_6_1653096842513"
+    },
+    {
+      "type": "standard",
+      "title": "Previsão do clima",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De qual cidade você quer saber a previsão do clima?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#previsao-clima",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1653096842513",
+      "previous_sibling": "node_2_1653091859745"
+    },
+    {
+      "type": "standard",
+      "title": "Plantio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Antes de iniciar o plantio, atente às condições da estação e veja quais são as plantas ou alimentos mais apropriados para esta época. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1653153812632",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@agricultura:Plantio",
+      "dialog_node": "node_7_1653154341962"
+    },
+    {
+      "type": "standard",
+      "title": "Rio de Janeiro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "temperatura (atual: 26, max: 28, min: 24)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1653096842513",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@cidade:(Rio de Janeiro)",
+      "dialog_node": "node_8_1653153712432",
+      "previous_sibling": "node_3_1653153358970"
+    },
+    {
+      "type": "standard",
+      "title": "Dicas de agricultura",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Navegando para dicas de agricultura..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1653091859745",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#tela-dicas-agricultura",
+      "dialog_node": "node_9_1653095526513",
+      "previous_sibling": "node_2_1653095206396"
+    },
+    {
+      "type": "standard",
+      "title": "Salvador",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "temperatura (atual: 27, max: 31, min: 20)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1653096842513",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@cidade:Salvador",
+      "dialog_node": "node_9_1653153758592",
+      "previous_sibling": "node_8_1653153712432"
+    },
+    {
+      "type": "standard",
+      "title": "Diagnóstico de doenças e pragas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual sua dúvida relacionada a doenças e pragas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#diagnostico",
+      "dialog_node": "node_9_1653159460310",
+      "previous_sibling": "node_5_1653153812632"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "João Verde",
+  "language": "pt-br",
+  "description": ""
+}
